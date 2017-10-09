@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="resume">
+  <head>
+    <title>Michael Abbott</title>
+
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/abbott221/Resume/gh-pages/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://raw.githubusercontent.com/abbott221/Resume/gh-pages/favicon.ico" type="image/x-icon">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <!-- GOOGLE ANALYTICS BEGIN -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-66394581-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- GOOGLE ANALYTICS END -->
+
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
+    <!-- BOOTSTRAP BEGIN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- custom -->
+    <script src="resume-parts/resume.js"></script>
+    <link rel="stylesheet" type="text/css" href="resume-parts/resume.css">
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <div ng-include="'resume-parts/navbar.html'"></div>
+    
+    <div ng-include="'resume-parts/about-me.html'"></div>
+
+    <div ng-include="'resume-parts/education.html'"></div>
+
+    <div ng-include="'resume-parts/skills.html'"></div>
+
+    <div ng-include="'resume-parts/experience.html'"></div>
+
+    <div ng-include="'resume-parts/projects.html'"></div>
+
+    <div ng-include="'resume-parts/contact.html'"></div>
+
+  </body>
+</html>
